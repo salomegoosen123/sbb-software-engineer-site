@@ -19,7 +19,9 @@ export function Services() {
               <p className="muted">{s.body}</p>
               <ul className="miniBullets">
                 {s.bullets.map((b) => (
-                  <li key={b}>{b}</li>
+                  <li key={b.title}>
+                    <strong>{b.title}</strong> — {b.desc}
+                  </li>
                 ))}
               </ul>
             </div>

@@ -3,11 +3,9 @@ import { Logo } from './Logo';
 import { site } from '../data/siteData';
 
 const sections = [
-  { id: 'about', label: 'About' },
   { id: 'services', label: 'Services' },
-  { id: 'work', label: 'Work' },
-  { id: 'process', label: 'Process' },
   { id: 'contact', label: 'Contact' },
+  { id: 'about', label: 'About' },
 ] as const;
 
 function useActiveSection() {
@@ -69,7 +67,7 @@ export function Navbar() {
         </nav>
 
         <div className="navCta">
-          <a href={site.brand.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href={site.brand.links.linkedin} target="_blank" rel="noopener noreferrer" className="socialLink">LinkedIn</a>
           <a className="btn" href={`mailto:${site.brand.email}`}>
             Email me
           </a>

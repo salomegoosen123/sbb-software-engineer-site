@@ -19,17 +19,6 @@ export function Process() {
           ))}
         </div>
 
-        <div className="panel" style={{ marginTop: 16 }}>
-          <h3 className="h3">FAQ</h3>
-          <div className="faq">
-            {site.faq.map((item) => (
-              <details key={item.q}>
-                <summary>{item.q}</summary>
-                <p className="muted">{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
