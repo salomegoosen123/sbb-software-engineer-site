@@ -11,6 +11,7 @@ export function Footer() {
           <div className="muted">© {year} · Built with React + Vite</div>
         </div>
         <div className="footerLinks">
+          <a href="#privacy" className="socialLink">Privacy</a>
           <a href={site.brand.links.linkedin} target="_blank" rel="noopener noreferrer" className="socialLink">LinkedIn</a>
           <a href={`mailto:${site.brand.email}`}>Email</a>
         </div>

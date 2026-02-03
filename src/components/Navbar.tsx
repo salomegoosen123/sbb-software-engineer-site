@@ -6,6 +6,7 @@ const sections = [
   { id: 'services', label: 'Services' },
   { id: 'contact', label: 'Contact' },
   { id: 'about', label: 'About' },
+  { id: 'privacy', label: 'Privacy' },
 ] as const;
 
 function useActiveSection() {
@@ -47,7 +48,7 @@ export function Navbar() {
     <header className="navWrap">
       <div className="container navInner">
         <a href="#top" className="brand" aria-label="Go to top">
-          <Logo size={38} />
+          <Logo />
           <div className="brandText">
             <div className="brandName">{site.brand.name}</div>
             <div className="brandTag">{site.brand.tagline}</div>
