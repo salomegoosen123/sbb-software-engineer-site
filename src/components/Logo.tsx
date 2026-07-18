@@ -1,7 +1,7 @@
 import logo from '../assets/sbb-logo.jpeg';
 
-export function Logo() {
-  return <img src={logo} alt="SBB Software Engineer" style={{ height: 56 }} />;
+export function Logo({ size = 56 }: { size?: number }) {
+  return <img src={logo} alt="SBB Software Engineer" style={{ height: size }} />;
 }
 
 

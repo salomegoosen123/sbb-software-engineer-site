@@ -1,6 +1,7 @@
 export const site = {
   brand: {
     name: 'Software Engineer',
+    tagline: 'Cloud Integrations & Accounting Automation',
     location: 'South Africa',
     email: 'salome.benita.becker@gmail.com',
     // Replace with your real links when ready
